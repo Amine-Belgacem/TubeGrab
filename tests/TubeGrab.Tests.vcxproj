@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals"><ProjectGuid>{702D774A-55CC-4D22-914F-65DC994401AD}</ProjectGuid><RootNamespace>TubeGrabTests</RootNamespace><WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration"><ConfigurationType>Application</ConfigurationType><PlatformToolset>v143</PlatformToolset><CharacterSet>Unicode</CharacterSet><UseDebugLibraries Condition="'$(Configuration)'=='Debug'">true</UseDebugLibraries><UseDebugLibraries Condition="'$(Configuration)'=='Release'">false</UseDebugLibraries></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="..\Common.Build.props" />
+  <ItemDefinitionGroup><Link><SubSystem>Console</SubSystem><AdditionalManifestDependencies>type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*';%(AdditionalManifestDependencies)</AdditionalManifestDependencies></Link></ItemDefinitionGroup>
+  <ItemGroup><ClCompile Include="Tests.cpp" /><ClCompile Include="NativeUiTests.cpp" /><ClCompile Include="..\src\App.cpp" /><ClCompile Include="..\src\AppUI.cpp" /><ClCompile Include="..\src\Options.cpp" /><ClCompile Include="..\src\Thumbnails.cpp" /><ClCompile Include="..\src\Common.cpp" /><ClCompile Include="..\src\Model.cpp" /><ClCompile Include="..\src\Process.cpp" /><ClCompile Include="..\src\Engine.cpp" /></ItemGroup>
+  <ItemGroup><ResourceCompile Include="..\resources\app.rc" /></ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

@@ -1,0 +1,12 @@
+.vs/
+bin/
+obj/
+build/
+dist/
+*.user
+*.suo
+tools/*.exe
+tools/*.zip
+tools/.staging*/
+tools/tool-versions.json
+tests/results/
